@@ -1,0 +1,2 @@
+import { canIAttendAll } from "../Meetings";
+
