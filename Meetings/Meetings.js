@@ -1,10 +1,4 @@
-let timeSetOne = [[0, 30],[5, 10],[15, 20]];
-let timeSetTwo = [[0,5],[6,10]];
-let timeSetThree = [[3, 42],[42,49],[30,31]];
-let timeSetFour = [[0, 30],[52, 59],[35, 50]]
-let timeSetFive = [[6,10],[0,5]];
-
-export function canIAttendAll(timeSet) {
+var canIAttendAll = (timeSet) => {
     let sortedTimeSet = sortMeetings(timeSet);
     for (let i = 0; i < sortedTimeSet.length-1; i++){
         if (timesOverlap(sortedTimeSet, i)){
@@ -14,11 +8,9 @@ export function canIAttendAll(timeSet) {
     return true;
 }
 
-let inputs = [timeSetOne, timeSetTwo, timeSetThree, timeSetFour, timeSetFive];
+// Export Statements for Testing
 
-for (let i = 0; i < inputs.length; i++){
-    console.log("Time Set " + (i+1) + ": " + canIAttendAll(inputs[i]));
-}
+module.exports = canIAttendAll;
 
 // Helpers
 
