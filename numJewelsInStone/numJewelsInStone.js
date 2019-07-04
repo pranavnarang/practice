@@ -1,4 +1,4 @@
-var numJewelsInStones = function(J, S) {
+const numJewelsInStones = function(J, S) {
 
     let count = 0;
 
@@ -32,15 +32,4 @@ var numJewelsInStones = function(J, S) {
 
 };
 
-
-console.log(numJewelsInStones("a", "aaaAbzzz"));
-
-console.log(numJewelsInStones("aA", "aAAbbbb"));
-
-console.log(numJewelsInStones("ab", "aabbcccc"));
-
-console.log(numJewelsInStones("c", "aabbcccc"));
-
-console.log(numJewelsInStones("z", "ZZZ"));
-
-console.log(numJewelsInStones("z", "zaA"));
+module.exports = numJewelsInStones;
