@@ -1,3 +1,5 @@
+// Clicks on 'load more' button and scrolls to the bottom of the page
+
 let numIdeas = document.getElementsByClassName("stat-number brand-color")[0].innerHTML;
 
  
