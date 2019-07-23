@@ -1,0 +1,25 @@
+create table terminals (
+    terminalName varchar,
+    fullName varchar,
+    X int, 
+    Y int,
+    final bit,
+    critSpillover float,
+    terminalInjTrigger float,
+    refusal float,
+    powerFailures bit,
+    powerFailMin int,
+    powerFailLikely int,
+    powerFialMax int,
+    powerRepairMin int,
+    powerRepairLikely int,
+    powerRepairMax int,
+    changeDestination bit,
+    numTransferLines int,
+    receiptTerminal bit,
+    isTLRFeeder bit,
+    terminalMinLevel bit,
+    terminalMinLevelTStart bit,
+    terminalMinLevelTEnd bit
+)
+
