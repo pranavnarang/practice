@@ -40,3 +40,19 @@ BEGIN
     END IF;
 END;
 
+
+CREATE TRIGGER 'validate_tanks_on_insert'
+    BEFORE INSERT
+    ON 'Tanks'
+    FOR EACH ROW
+BEGIN
+    IF (NEW.'Terminal' NOT IN ( SELECT T.Name from Terminal T) )
+    OR (NEW.'LineIn1' NOT IN ( SELECT P.Line_Name from Pipelines P))
+    -- repeat till 6
+    OR (NEW.'LineOut1' NOT IN ( SELECT P2.Line_Name from Pipelines P2))
+    -- repeat till 6
+    OR (
+        IF (New.'Terminal' IN ( SELECT T2.Name from Terminal T2 WHERE T2.IsFeeder = 1))
+        AND 
+        -- bullet point 4
+    )
