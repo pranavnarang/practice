@@ -1,14 +1,20 @@
 def collatz(number):
-    if(number%2==0):
-        print(number/2)
-    if(number%2!=1):
-        print(3*number+1)
+    if(number % 2 == 0):
+        val = number//2
+        print(val)
+        return val
+    elif (number % 2 ==1):
+        val = (3*number+1)
+        print(val)
+        return val
 
 def recursiveCollatz(number):
     if(number==1):
-        print("1")
-    number = collatz(number)
-    recursiveCollatz(number)
+        print("Done")
+    else:
+        newNumber = collatz(number)
+        recursiveCollatz(newNumber)
 
-number = int(input("Enter a number: "))
+number = (input("Enter a number: "))
+number = int(number)
 recursiveCollatz(number)
