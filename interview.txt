@@ -1,0 +1,38 @@
+List of topics to go over for techincal interviews:
+1. Data structures
+	a. Array
+	b. Linked Lists
+	c. Hash Map
+	d. Queue
+	e. Stack
+	f. Heap
+	g. BST
+	h. Graphs
+	i. Binary/Bitwise
+2. Algorithms
+	a. Search
+	b. Traversal
+	c. Recursion
+3. Design Patters
+4. Front End
+	a. JS
+	b. jQuery
+	c. React
+		i. Redux
+		ii. Router
+	d. Angular/Vue 
+5. Back End
+	a. Node
+	b. Express
+	c. Python
+	d. SQL
+		i. MySQL
+		ii. SQL Server
+	e. MongoDB
+6. Mobile
+	a. React Native
+	b. Swift
+7. Blockchain
+	a. Solidity
+	b. Hyperledger
+
