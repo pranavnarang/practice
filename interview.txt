@@ -1,5 +1,5 @@
 List of topics to go over for techincal interviews:
-1. Data structures
+1. Data structures (in C++, Python, JS)
 	a. Array
 	b. Linked Lists
 	c. Hash Map
@@ -9,11 +9,11 @@ List of topics to go over for techincal interviews:
 	g. BST
 	h. Graphs
 	i. Binary/Bitwise
-2. Algorithms
+2. Algorithms (in C++, Python, JS)
 	a. Search
 	b. Traversal
 	c. Recursion
-3. Design Patters
+3. Design Patterns (in JS)
 4. Front End
 	a. JS
 	b. jQuery
@@ -35,4 +35,7 @@ List of topics to go over for techincal interviews:
 7. Blockchain
 	a. Solidity
 	b. Hyperledger
-
+8. Server stuff
+	a. AWS
+	b. Azure
+	c. Firebase
