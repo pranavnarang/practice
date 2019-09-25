@@ -1,10 +1,8 @@
 class Node {
-    
     constructor(data){
         this.data = data;
         this.next = null;
     }
-
 }
 
 
@@ -19,7 +17,7 @@ class LinkedList {
     // functions to be implemented 
     // add(element) 
     addNode = (data) => {
-        let new_node = Node(data);
+        let new_node = new Node(data);
         let current;
 
         if (this.head == null){
@@ -34,6 +32,13 @@ class LinkedList {
         this.size++;
     }
     // insertAt(element, location) 
+    insertAt = (data, location) => {
+        let new_node = Node(data);
+        let index = 0;
+        if (this.size < index){
+            console.log('Index is greater than list size');
+        }
+    }
     // removeFrom(location) 
     // removeElement(element) 
   
